@@ -1,7 +1,12 @@
 <template>
-  <div class="bg-gray-700 text-gray-200">
-    <NavBar/>
-    <Nuxt />
+  <div class="bg-gray-700 text-gray-200 flex">
+    <LeftAds/>
+    <div class="w-full md:w-4/5 mx-auto">
+        <NavBar/>
+        <TopAds/>
+        <Nuxt />
+    </div>
+    <RightAds/>
   </div>
 </template>
 
@@ -25,3 +30,5 @@ html {
   box-sizing: border-box;
 }
 </style>
+<script>
+</script>
