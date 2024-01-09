@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-700 text-gray-200 flex">
+  <div class="bg-gray-700 text-gray-200 flex flex-col min-h-screen">
     <LeftAds/>
     <div class="w-full md:w-4/5 mx-auto">
         <NavBar/>
@@ -7,6 +7,9 @@
         <Nuxt />
     </div>
     <RightAds/>
+    <div class="mt-auto w-full md:w-4/5 mx-auto">
+        <Footer/>
+    </div>
   </div>
 </template>
 

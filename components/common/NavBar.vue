@@ -22,13 +22,32 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-md font-sans font-semibold">
-          <li><a href="#" class="border-b-4 border-orange-600 pb-1">Home</a></li>
-          <li><a href="#" class="hover:border-b-4 hover:border-orange-600">Services</a></li>
-          <li><a href="#" class="hover:border-b-4 hover:border-orange-600">Features</a></li>
-          <li><a href="#" class="hover:border-b-4 hover:border-orange-600">FAQ</a></li>
-          <li><a href="#" class="hover:border-b-4 hover:border-orange-600">Contact</a></li>
-          <li><a href="#" class="cta bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white font-semibold">Sign Up</a></li>
+        <ul class="flex space-x-5 text-xl font-sans font-semibold flex-wrap">
+          <li class="hover:text-orange-600"><a href="#">Home</a></li>
+          <li class="hover:text-orange-600"><a href="#">Services</a></li>
+          <li class="hover:text-orange-600"><a href="#">Features</a></li>
+          <li class="hover:text-orange-600"><a href="#">FAQ</a></li>
+          <li class="hover:text-orange-600"><a href="#">Contact</a></li>
+          <li class="hover:text-orange-600">
+              <div class="relative flex items-center text-gray-900">
+                  <input type="text"
+                          placeholder="Tìm kiếm"
+                          class="px-4 border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-300"/>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                      <svg class="h-5 w-5 text-gray-400"
+                           fill="none"
+                           stroke="currentColor"
+                           viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M21 21l-5.2-5.2"></path>
+                          <circle cx="10" cy="10" r="7"></circle>
+                      </svg>
+                  </div>
+              </div>
+          </li>
         </ul>
       </div>
 
@@ -64,14 +83,32 @@
         <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
           <Logo />
         </span>
-
-        <ul class="divide-y font-sans">
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Home</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Services</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Features</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">FAQ</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Contact</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white">Sign Up</a></li>
+        <ul class="font-sans font-semibold">
+            <li>
+                <div class="relative my-3 flex items-center justify-start text-gray-900">
+                <input type="text"
+                       placeholder="Tìm kiếm"
+                       class="pl-2 border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-300"/>
+                <button class="bg-orange-600 h-full p-1 rounded-md ml-1">
+                    <svg class="h-5 w-5 text-white"
+                         fill="none"
+                         stroke="currentColor"
+                         viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 21l-5.2-5.2"></path>
+                        <circle cx="10" cy="10" r="7"></circle>
+                    </svg>
+                </button>
+            </div>
+            </li>
+          <li><a href="#" @click="isOpen = false" class="my-1 inline-block">Home</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-1 inline-block">Services</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-1 inline-block">Features</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-1 inline-block">FAQ</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-1 inline-block">Contact</a></li>
         </ul>
       </aside>
 
