@@ -1,5 +1,5 @@
 <template>
   <div class="text-white cursor-pointer" @click="$router.push('/')">
-      <strong class="text-4xl">Xp<span class="bg-orange-600 rounded-md">HUB</span></strong>
+      <strong class="text-4xl">Xp<span class="bg-orange-600 rounded-md">hub</span></strong>
   </div>
 </template>
